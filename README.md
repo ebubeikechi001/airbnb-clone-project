@@ -18,7 +18,7 @@ This project is a full-stack Airbnb clone built to simulate the core functionali
 - **CI/CD**: GitHub Actions
 - **Version Control**: Git + GitHub
 
-- ## 👥 Team Roles
+## 👥 Team Roles
 
 In a real-world software project, clear role definition helps ensure smooth collaboration and efficient execution. Below are the key roles and responsibilities for this Airbnb Clone Project:
 
@@ -117,3 +117,29 @@ Handles transactions for bookings.
 - Each **Booking** has one associated **Payment** (one-to-one).
 
 This design ensures data integrity and models real-world relationships between users, listings, transactions, and feedback.
+
+## 🚀 Feature Breakdown
+
+The Airbnb Clone Project includes several core features that replicate the functionality of a real-world booking platform. Each feature is designed to contribute to a seamless user experience and robust backend logic.
+
+### 🔐 User Management
+Allows users to register, log in, and manage their profiles. This feature also distinguishes between guests and hosts using role-based logic.
+
+### 🏠 Property Management
+Enables hosts to create, update, and delete property listings. Each listing includes detailed descriptions, pricing, and availability information.
+
+### 📆 Booking System
+Lets users browse available properties and make reservations based on availability. The system handles date selection, overlapping booking checks, and booking confirmation.
+
+### 💳 Payment Integration
+Handles the payment processing for bookings, including calculating total costs and confirming transactions. This ensures a complete transaction loop for users.
+
+### ⭐ Review System
+Allows users to leave ratings and comments on properties they have booked. This helps build trust in the platform by enabling feedback and quality assurance.
+
+### 🔒 API Security
+Implements authentication and authorization using secure tokens to protect sensitive endpoints. Ensures that only verified users can access or modify resources.
+
+### ⚙️ CI/CD & Deployment
+Automates code testing and deployment using GitHub Actions and Docker. This streamlines development and ensures that new changes are safely deployed.
+
