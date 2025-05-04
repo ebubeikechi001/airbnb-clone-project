@@ -60,3 +60,60 @@ The Airbnb Clone Project leverages a combination of powerful technologies to bui
 - **GitHub Actions**: A CI/CD tool used to automate workflows, such as testing and deploying the application when code changes are pushed.
 
 - **Markdown**: A lightweight markup language used to create formatted text for the project documentation, especially in `README.md` files.
+
+
+## 🗃️ Database Design
+
+The Airbnb Clone Project uses a relational database (MySQL) to manage structured data and relationships. Below are the key entities and their important fields:
+
+### 1. **Users**
+Represents users of the platform (both hosts and guests).
+- `id`: Unique identifier
+- `name`: Full name
+- `email`: Email address (unique)
+- `password`: Hashed password
+- `is_host`: Boolean flag to determine if the user is a host
+
+### 2. **Properties**
+Represents listings available for booking.
+- `id`: Unique identifier
+- `title`: Name of the property
+- `description`: Detailed information about the property
+- `price_per_night`: Cost of booking per night
+- `host_id`: Foreign key linking to the `Users` table
+
+### 3. **Bookings**
+Tracks reservations made by users.
+- `id`: Unique identifier
+- `user_id`: Foreign key linking to the user who made the booking
+- `property_id`: Foreign key linking to the property booked
+- `start_date`: Check-in date
+- `end_date`: Check-out date
+
+### 4. **Reviews**
+Captures feedback from users about their stays.
+- `id`: Unique identifier
+- `user_id`: Foreign key linking to the reviewer
+- `property_id`: Foreign key linking to the property reviewed
+- `rating`: Numeric score (e.g., 1 to 5)
+- `comment`: Textual feedback
+
+### 5. **Payments**
+Handles transactions for bookings.
+- `id`: Unique identifier
+- `booking_id`: Foreign key linking to the related booking
+- `amount`: Total amount paid
+- `payment_method`: e.g., Credit Card, PayPal
+- `status`: Payment status (e.g., successful, failed)
+
+---
+
+### 🔗 Entity Relationships
+
+- A **User** can list multiple **Properties** (one-to-many).
+- A **User** can make multiple **Bookings** (one-to-many).
+- A **Booking** is made for one **Property** and by one **User** (many-to-one).
+- A **Property** can have multiple **Reviews** from different **Users** (one-to-many).
+- Each **Booking** has one associated **Payment** (one-to-one).
+
+This design ensures data integrity and models real-world relationships between users, listings, transactions, and feedback.
