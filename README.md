@@ -43,3 +43,20 @@ Maintains the product vision and requirements. Prioritizes features, manages the
 ### 🔹 Business Analyst
 Acts as the bridge between stakeholders and the development team. Gathers requirements, maps user workflows, and translates business needs into technical tasks.
 
+## 🧰 Technology Stack
+
+The Airbnb Clone Project leverages a combination of powerful technologies to build a scalable, secure, and maintainable web application. Each tool plays a specific role in the system architecture:
+
+- **Django**: A high-level Python web framework used to develop the backend logic and handle requests, responses, and user authentication.
+
+- **MySQL**: A reliable relational database management system used to store structured data like users, bookings, listings, and reviews.
+
+- **GraphQL**: A query language for APIs that allows clients to request only the data they need, improving efficiency and flexibility in data retrieval.
+
+- **Docker**: A containerization tool that ensures consistent environments across development, testing, and production by packaging the application with all its dependencies.
+
+- **GitHub**: A version control platform for managing the codebase, collaborating with team members, and tracking changes through commits and pull requests.
+
+- **GitHub Actions**: A CI/CD tool used to automate workflows, such as testing and deploying the application when code changes are pushed.
+
+- **Markdown**: A lightweight markup language used to create formatted text for the project documentation, especially in `README.md` files.
