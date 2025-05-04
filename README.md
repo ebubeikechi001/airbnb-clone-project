@@ -143,3 +143,30 @@ Implements authentication and authorization using secure tokens to protect sensi
 ### ⚙️ CI/CD & Deployment
 Automates code testing and deployment using GitHub Actions and Docker. This streamlines development and ensures that new changes are safely deployed.
 
+## 🔐 API Security
+
+Security is a critical aspect of any web application, especially one that handles sensitive user data, payments, and authentication like an Airbnb clone. Below are the key security measures implemented in this project:
+
+### 1. **Authentication**
+Uses token-based authentication (e.g., JWT) to ensure that only registered users can access protected endpoints. This prevents unauthorized access and protects user sessions.
+
+### 2. **Authorization**
+Enforces role-based access control, allowing only hosts to manage properties and only guests to make bookings. This prevents users from performing actions outside their permission level.
+
+### 3. **Rate Limiting**
+Limits the number of requests a user can make within a certain time frame to prevent brute-force attacks and abuse of the API.
+
+### 4. **Input Validation and Sanitization**
+Validates all incoming data to avoid injection attacks and ensures only safe, expected input is processed by the system.
+
+### 5. **Secure Payment Handling**
+Ensures that sensitive payment data is transmitted and stored securely, possibly by integrating with trusted third-party payment processors.
+
+---
+
+### 🔒 Why API Security Matters
+
+- **Protecting User Data**: Ensures that personal information such as email, passwords, and payment methods are kept safe.
+- **Preventing Unauthorized Access**: Ensures only the right users can perform actions like listing properties or making bookings.
+- **Maintaining Platform Trust**: A secure application builds user trust and ensures compliance with best practices and industry standards.
+
