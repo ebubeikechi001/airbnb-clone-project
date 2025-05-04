@@ -170,3 +170,19 @@ Ensures that sensitive payment data is transmitted and stored securely, possibly
 - **Preventing Unauthorized Access**: Ensures only the right users can perform actions like listing properties or making bookings.
 - **Maintaining Platform Trust**: A secure application builds user trust and ensures compliance with best practices and industry standards.
 
+## ⚙️ CI/CD Pipeline
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment**, a set of practices that automate the process of building, testing, and deploying code. CI/CD pipelines help streamline development workflows, reduce manual errors, and ensure rapid and reliable delivery of application updates.
+
+### 🔄 Importance of CI/CD in This Project
+
+- **Continuous Integration** ensures that all code pushed to the repository is automatically tested and validated, reducing bugs and integration issues.
+- **Continuous Deployment** allows for seamless and automated delivery of new features and updates to the production environment, increasing development speed and consistency.
+- Helps maintain **code quality**, **reliability**, and **team productivity**, especially in collaborative environments.
+
+### 🛠️ Tools Used
+
+- **GitHub Actions**: Automates tasks like running tests, checking code quality, and deploying the application when new code is pushed.
+- **Docker**: Ensures consistent environments across development, testing, and production by packaging the application into containers.
+- **(Optional)**: Other tools such as Jenkins or Travis CI can also be integrated for advanced workflows.
+
